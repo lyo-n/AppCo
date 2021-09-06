@@ -1,0 +1,145 @@
+$text-color: #ffffff;
+$info-color: rgb(255, 150, 51);
+.footer{
+    width: 100%;
+    position: relative;
+    z-index: 6;
+    // display: block;
+}
+.infoBlock{
+    text-align: center;
+}
+.footerHeading{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: $text-color;
+}
+.infoBlock p{
+    display: block;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 300;
+    color: $info-color;
+}
+.infoBlock p span{
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 500;
+    color: $text-color;
+}
+// .infoBlock p a{
+//     display: inline-block;
+//     font-family: Roboto;
+//     font-size: 21px;
+//     line-height: 21px;
+//     font-weight: 700;
+//     text-decoration: none;
+//     color: $text-color;
+// }
+.phoneBtn{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: none;
+    border: none;
+    fill: $text-color;   
+}
+.phoneBtn:hover{
+    fill: rgb(2, 128, 39);
+    transform: scale(1.2);
+}
+.phoneImg{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform: scaleX(-1);
+    top: 5%;
+    left: 23%;
+}
+.phoneImg:hover{
+    transform: scale(1.09);
+    transform: scaleX(-1);
+
+}
+.footer p a:hover{
+    transform: scale(1.01)
+}
+.footer p span:hover{
+    transform: scale(1.01);
+}
+.footer p a:hover::after{
+    content: attr(data-title);
+    position: absolute; 
+    left: 50px; right: 0; bottom: 5px; 
+    z-index: 1; 
+    color: rgb (247, 241, 241); 
+    text-align: center; 
+    font-family: Roboto, Arial, Helvetica, sans-serif; 
+    font-size: 10px; 
+    padding: 15px 20px; 
+}
+.footer p span:hover::after{
+    content: attr(data-title);
+    position: absolute; 
+    left: 50px; right: 0; bottom: 5px; 
+    z-index: 1; 
+    color: rgb(247, 241, 241); 
+    text-align: center; 
+    font-family: Roboto, Arial, Helvetica, sans-serif; 
+    font-size: 10px; 
+    padding: 15px 20px; 
+}
+.socialIcons{    
+    padding-left: 0;
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.socialIcons li:hover{
+    transform: scale(1.09);
+}
+.socialIcons li{
+    list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+    .footerHeading{
+        font-size: 36px;
+    }
+    .socialIcons{
+        width:50%;
+    }
+    .infoBlock p{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .infoBlock p span{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .phoneBtn{
+        width: 60px;
+        height: 60px;
+    }
+    .phoneImg{
+        width: 32px;
+        height: 32px;
+    }
+    .footer p a:hover::after{
+        font-size: 15px; 
+    }
+    .footer p span:hover::after{ 
+        font-size: 15px; 
+    }
+}
+@media screen and (min-width: 1280px) {
+    .socialIcons{
+        width:15%;
+    }
+}

@@ -1,0 +1,343 @@
+$text-color: #ffffff;
+$heading-color: rgb(255, 150, 51);
+.skills{
+  padding-bottom: 150px;
+  position: relative;
+  z-index: 5;
+  // position: sticky;
+    // top: 0;
+  background-color: #111010;
+}
+.skills ul{
+  padding: 0;
+}
+.pseudoBox{
+  height: 30px;
+  display: block;
+}
+.skills h3{
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;;
+  text-align: center;
+  color: $heading-color;
+}
+.skills h4{
+  margin: 0;
+}
+li a{  
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.skills li{
+  color: $text-color;
+  list-style-type: none;
+  margin: 0 auto;
+  width: 80%;
+}
+.skills ul{
+  margin-top: 0;
+}
+.techSkills li{
+  text-align: center;
+}
+.softSkills li{
+  text-align: center;
+}
+.lang li{
+  text-align: center;
+}
+.univerce li{
+  text-align: center;
+}
+.univerce h4{
+  color: $heading-color;
+}
+.linkWork{
+  display: inline-block;
+  width:0px;
+  color: $text-color;
+  font-family: Roboto;
+  font-style: italic;
+  color: $heading-color;
+  font-size: 18px;
+  font-weight: 300;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.linkCertificate{
+  display: block;
+  color: $text-color;
+  font-family: Roboto;
+  font-style: italic;
+  color: $heading-color;
+  font-size: 12px;
+  font-weight: 300;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+/* выпадающий блок 0 */
+
+
+/* выпадающий блок 1 */
+.techSkills,
+.pseudoBtn[type="checkbox"] {
+  // display: none;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.7s linear;
+}
+.pseudoBtn[type="checkbox"]:checked ~ .techSkills {
+  // display: block; 
+  visibility: visible;
+  height: 200px;
+  opacity: 1;
+}
+/* выпадающий блок 2 */
+.softSkills,
+.pseudoBtnSoft[type="checkbox"] {
+  // display: none;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.7s linear;
+}
+.pseudoBtnSoft[type="checkbox"]:checked ~ .softSkills {
+  // display: block;  
+  visibility: visible;
+  height: 115px;
+  opacity: 1;
+}
+/* выпадающий блок 3 */
+.lang,
+.pseudoBtnLang[type="checkbox"] {
+   // display: none;
+   height: 0px;
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s, opacity 0.7s linear;
+}
+.pseudoBtnLang[type="checkbox"]:checked ~ .lang {
+     // display: block;  
+  visibility: visible;
+  height: 75px;
+  opacity: 1;
+}
+/* выпадающий блок 4 */
+.purpouseText,
+.pseudoBtnPurp[type="checkbox"] {
+    // display: none;
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.7s linear;
+}
+.pseudoBtnPurp[type="checkbox"]:checked ~ .purpouseText {
+    // display: block;  
+  visibility: visible;
+  height: 120px;
+  opacity: 1;
+}
+/* выпадающий блок 5 */
+.expText,
+.pseudoBtnExp[type="checkbox"] {
+   // display: none;
+   height: 0px;
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s, opacity 0.7s linear;
+}
+.pseudoBtnExp[type="checkbox"]:checked ~ .expText {
+    // display: block;  
+  visibility: visible;
+  height: 515px;
+  opacity: 1
+}
+/* выпадающий блок 6 */
+.workExpText,
+.pseudoBtnWorkExp[type="checkbox"] {
+   // display: none;
+   height: 0px;
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s, opacity 0.7s linear;
+}
+.pseudoBtnWorkExp[type="checkbox"]:checked ~ .workExpText {
+    // display: block;  
+  visibility: visible;
+  height: 120px;
+  opacity: 1
+}
+/* выпадающий блок 7 */
+.univerce,
+.pseudoBtnUniverce[type="checkbox"] {
+  // display: none;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.7s linear;
+}
+.pseudoBtnUniverce[type="checkbox"]:checked ~ .univerce {
+     // display: block;  
+  visibility: visible;
+  height: 180px;
+  opacity: 1
+}
+
+/* Стилизация псевдокнопки */
+.btn {
+  display: block;
+  // margin-bottom: 4px;
+  // padding: 4px 8px;
+  margin: 0 auto;
+  /* width: 45%; */
+  // height: 25px;
+  // margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills h3{
+    font-size: 36px;
+    line-height:36px;
+  }
+  .skills li{
+    font-size: 24px;
+  }
+  li a{  
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .linkWork{
+    font-size: 24px;
+
+  }
+  /* выпадающий блок 1 */
+.pseudoBtn[type="checkbox"]:checked ~ .techSkills {
+  height: 300px;
+}
+/* выпадающий блок 2 */
+.pseudoBtnSoft[type="checkbox"]:checked ~ .softSkills {
+  height: 160px;
+}
+/* выпадающий блок 3 */
+.pseudoBtnLang[type="checkbox"]:checked ~ .lang {
+  height: 100px;
+}
+/* выпадающий блок 4 */
+.pseudoBtnPurp[type="checkbox"]:checked ~ .purpouseText {
+  height: 110px;
+}
+/* выпадающий блок 5 */
+.pseudoBtnExp[type="checkbox"]:checked ~ .expText {
+  height: 570px;
+}
+/* выпадающий блок 6 */
+.pseudoBtnWorkExp[type="checkbox"]:checked ~ .workExpText {
+  height: 140px;
+}
+/* выпадающий блок 7 */
+.pseudoBtnUniverce[type="checkbox"]:checked ~ .univerce {
+  height: 400px;
+}
+.sertifFiles{
+  display: flex;
+  justify-content:space-between;
+  width: 400px;
+  margin: 0 auto;
+}
+.linkCertificate{
+  font-size: 20px;
+  line-height:36px;
+  // display: flex;
+  text-align: center;
+}
+}
+@media screen and (min-width: 1280px) {
+.skills{
+  width: 80%;
+  margin: 0 auto;
+  // padding-bottom: 150px;
+}
+.skills h3{
+  font-size: 50px;
+}
+.skills h4{
+  font-size: 36px;
+}
+.skills li{
+  font-size: 36px ;
+  line-height: 50px;
+}
+.linkWork{
+  font-size: 36px;
+}
+  /* выпадающий блок 1 */
+  .pseudoBtn[type="checkbox"]:checked ~ .techSkills {
+    height: 280px;
+    padding-bottom:40px;
+  }
+  /* выпадающий блок 2 */
+  .pseudoBtnSoft[type="checkbox"]:checked ~ .softSkills {
+    height: 290px;
+  }
+  /* выпадающий блок 3 */
+  .pseudoBtnLang[type="checkbox"]:checked ~ .lang {
+    height: 190px;
+  }
+  /* выпадающий блок 4 */
+  .pseudoBtnPurp[type="checkbox"]:checked ~ .purpouseText {
+    height: 160px;
+  }
+  /* выпадающий блок 5 */
+  .pseudoBtnExp[type="checkbox"]:checked ~ .expText {
+    height: 540px;
+  }
+  /* выпадающий блок 6 */
+  .pseudoBtnWorkExp[type="checkbox"]:checked ~ .workExpText {
+    height: 150px;
+  }
+  /* выпадающий блок 7 */
+  .pseudoBtnUniverce[type="checkbox"]:checked ~ .univerce {
+    height: 600px;
+  }
+  .skills li{
+    width: 100%;
+  }
+
+.techSkills{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 20vw;
+  margin: 0 auto;
+}
+.techSkills li{
+  display: inline-block;
+  flex-basis: 50%;
+}
+
+
+
+// .flexContent{
+//   display: flex;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+// }
+// .flexContent div{
+//   display: inline-block;
+//   flex-basis: 50%;
+// }
+// .flexContent div:nth-child(5) {
+//   flex-basis: 100%;
+// }
+// .flexContent div:nth-child(6) {
+//   flex-basis: 100%;
+// }
+  
+}
